@@ -34,28 +34,28 @@ List of activities performed when the corresponding measurements were taken and 
 
 <h3> 4.	Extracts only the measurements on the mean and standard deviation for each measurement</h3>
 <ul>
-  <li>req_data (10299 rows, 81 columns) is created by first, applying grep() on feature_raw, to collect measurements on the mean and standard deviation (std) for each measurement and then applying it to all_data to extract req_data.</li>
-  <li>Added column names to all columns of the req_data as “subject”,”activity” and feature name respectively.</li>
+  <li><i>req_data</i> (10299 rows, 81 columns) is created by first, applying <b>grep()</b> on <i>feature_raw</i>, to collect measurements on the mean and standard deviation (<i>std</i>) for each measurement and then applying it to <i>all_data</i> to extract <i>req_data</i>.</li>
+  <li>Added column names to all columns of the <i>req_data</i> as “<i>subject</i>”,”<i>activity</i>” and feature name respectively.</li>
 </ul>
 
 
 <h3> 5.	Uses descriptive activity names to name the activities in the data set</h3>
 <ul>
-  <li>Entire numbers in activity column of the req_data replaced with corresponding activity taken from second column of the activity_labels variable.</li>
+  <li>Entire numbers in activity column of the <i>req_data</i> replaced with corresponding activity taken from second column of the <i>activity_labels</i> variable.</li>
 </ul>
 
 <h3> 6.	Appropriately labels the data set with descriptive variable names</h3>
 <ul>
-  <li>activity column in req_data renamed into activity_labels</li>
-  <li>All Acc in column’s name replaced by Accelerometer</li>
-  <li>All Gyro in column’s name replaced by Gyroscope</li>
-  <li>All Mag in column’s name replaced by Magnitude</li>
-  <li>All start with character f in column’s name replaced by FrequencyDomain</li>
-  <li>All start with character t in column’s name replaced by TimeDomain</li>
+  <li><i>activity</i> column in <i>req_data</i> renamed into <i>activity_labels</i></li>
+  <li>All <i>Acc</i> in column’s name replaced by <i>Accelerometer</i></li>
+  <li>All <i>Gyro</i> in column’s name replaced by <i>Gyroscope</i></li>
+  <li>All <i>Mag</i> in column’s name replaced by <i>Magnitude</i></li>
+  <li>All start with character <i>f</i> in column’s name replaced by <i>FrequencyDomain</i></li>
+  <li>All start with character <i>t</i> in column’s name replaced by <i>TimeDomain</i></li>
 </ul>
 
 <h3> 7.	From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject</h3>
 <ul>
-    <li>mean_data (180 rows, 81 columns) is created by reshaping req_data. Firstly, melting req_data along with “subject and activity as id variables and the melt_data is casted to take mean for each subject and activity group.</li>
-    <li>Export mean_data into tidy_data.txt file.</li>
+    <li><i>mean_data</i> (180 rows, 81 columns) is created by reshaping <i>req_data</i>. Firstly, melting <i>req_data</i> along with “<i>subject</i> and <i>activity</i> as id variables and the <i>melt_data</i> is casted to take mean for each <i>subject</i> and <i>activity</i> group.</li>
+    <li>Export <i>mean_data</i> into <i>tidy_data.txt</i> file.</li>
 </ul>
