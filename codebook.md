@@ -56,6 +56,6 @@ List of activities performed when the corresponding measurements were taken and 
 
 <h3> 7.	From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject</h3>
 <ul>
-    <li><i>mean_data</i> (180 rows, 81 columns) is created by reshaping <i>req_data</i>. Firstly, melting <i>req_data</i> along with “<i>subject</i> and <i>activity</i> as id variables and the <i>melt_data</i> is casted to take mean for each <i>subject</i> and <i>activity</i> group.</li>
+    <li><i>mean_data</i> (180 rows, 81 columns) is created by reshaping <i>req_data</i>. Firstly, melting <i>req_data</i> along with <i>subject</i> and <i>activity</i> as id variables and the <i>melt_data</i> is casted to take mean for each <i>subject</i> and <i>activity</i> group.</li>
     <li>Export <i>mean_data</i> into <i>tidy_data.txt</i> file.</li>
 </ul>
