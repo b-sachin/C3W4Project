@@ -26,10 +26,10 @@ List of activities performed when the corresponding measurements were taken and 
 
 <h3> 3.	Merges the training and the test sets to create one data set</h3>
 <ul>
-  <li>train (7352 rows, 563 column) is created by merging train_subject, train_activity and train using cbind() function</li>
+  <li><i>train</i> (7352 rows, 563 column) is created by merging <i>train_subject</i>, <i>train_activity</i> and <i>train</i> using <b>cbind()</b> function</li>
   <li>test (2947 rows, 563 column) is created by merging</li>
-  <li>test_subject, test_activity and test using cbind() function</li>
-  <li>all_data (10299 rows, 561 columns) is created by merging train and test using rbind() function</li>
+  <li><i>test_subject</i>, <i>test_activity</i> and <i>test</i> using <b>cbind() </b>function</li>
+  <li><i>all_data</i> (10299 rows, 561 columns) is created by merging <i>train</i> and <i>test</i> using <b>rbind()</b> function</li>
 </ul>
 
 <h3> 4.	Extracts only the measurements on the mean and standard deviation for each measurement</h3>
